@@ -1,0 +1,19 @@
+#fail{
+	width:70%;
+	height:70%;
+	
+	}
+#alert{
+	color:red;
+}
+#title{
+	margin-top:20px;
+}
+.error{
+	color:red;
+}
+#head{
+	background-color:black !important;
+	color:white !important;
+	
+}
