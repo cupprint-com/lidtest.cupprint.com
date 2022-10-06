@@ -2,7 +2,7 @@
  
  // function to insert test row of data
  function insertTestResult($test,$conn,$jobNum,$sku,$batchResult,$line){
-				 	 $query = "INSERT INTO cplidtestresults (jobNumber,sku, startTime,result,endTime,testTime,batchResult,line)  VALUES(:jobNum,:sku,:startTime,:result,:endTime,:totalTime,:batchResult,:line) ";
+				 	 $query = "INSERT INTO cpLidTestResults (jobNumber,sku, startTime,result,endTime,testTime,batchResult,line)  VALUES(:jobNum,:sku,:startTime,:result,:endTime,:totalTime,:batchResult,:line) ";
                      $parameters = [
 					  ":jobNum" => $jobNum,
 					  ":sku" => $sku,
