@@ -24,14 +24,11 @@ $databaseUser='warehouse';
 $databasePassword='LFaB8TBFsDenhndg';
 */
 
-# database host
-$databaseHost='localhost';
-# database name
-$databaseName='testing';
-# database user
-$databaseUser='root';
-# database password
-$databasePassword='root';
+$databaseHost = "localhost";
+$databaseUser = "warehouse_development";
+$databasePassword = "BEPFfuRuPvhXUUkf";
+$databaseName = "warehouse_development";
+
 
 
 
