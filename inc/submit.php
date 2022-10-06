@@ -17,7 +17,7 @@
                      $stmt = $conn->prepare($query);
                      $stmt->execute($parameters);
                      $results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-                     if ($results) {
+                     if ($stmt) {
                          echo 'success';
                      } else {
                          echo 'failure' . mysql_error();
