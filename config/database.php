@@ -20,7 +20,7 @@ class Database{
             $this->conn = new PDO("mysql:host=" . WAREHOUSE_HOST . ";dbname=" . WAREHOUSE_DATABASE, WAREHOUSE_USER, WAREHOUSE_PASSWORD);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);            
             $this->conn->exec("set names utf8");
-         //  echo "Connected<br>";
+            echo "Connected<br>";
         }catch(PDOException $exception){
             print_r($exception);
             echo "Error Connecting to DB<br>";
