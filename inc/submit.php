@@ -15,7 +15,7 @@
                      ];                  
                                        
                      $stmt = $conn->prepare($query);
-                    // $stmt->execute($parameters);
+                     $stmt->execute($parameters);
                      //$results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
                      if ($stmt) {
                          echo 'success';
