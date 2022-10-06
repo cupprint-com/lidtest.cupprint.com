@@ -14,17 +14,17 @@
 					  ":line" => $line,					  
                      ];                  
                                   
-                     
+                     //get insert error messages
                      $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
+                     
                      $stmt = $conn->prepare($query);
                      $stmt->execute($parameters);
                      //$results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-                     print_r($stmt->errorInfo());
+                     //print_r($stmt->errorInfo());
 					 
  }
  
- echo'<br><br>';
- print_r($_POST);
+ //print_r($_POST);
  
  if(isset($_POST['submit'])){	
  
