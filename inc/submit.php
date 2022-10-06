@@ -13,8 +13,9 @@
 					  ":batchResult" => $batchResult,
 					  ":line" => $line,					  
                      ];                  
-                                       
-                     $this->pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
+                                  
+                     
+                     $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
                      $stmt = $conn->prepare($query);
                      $stmt->execute($parameters);
                      //$results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
