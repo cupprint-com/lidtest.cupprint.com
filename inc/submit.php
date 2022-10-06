@@ -17,11 +17,9 @@
                      $stmt = $conn->prepare($query);
                      $stmt->execute($parameters);
                      //$results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-                     if ($stmt) {
-                         echo 'success';
-                     } else {
-                         echo 'failure' . mysql_error();
-                     }
+                     echo "\nPDOStatement::errorInfo():\n";
+                     $arr = $stmt->errorInfo();
+                     print_r($arr);
 					 
  }
  
