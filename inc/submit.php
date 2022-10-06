@@ -14,12 +14,11 @@
 					  ":line" => $line,					  
                      ];                  
                                        
+                     $this->pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
                      $stmt = $conn->prepare($query);
                      $stmt->execute($parameters);
                      //$results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-                     echo "\nPDOStatement::errorInfo():\n";
-                     $arr = $stmt->errorInfo();
-                     print_r($arr);
+                     print_r($stmt->errorInfo());
 					 
  }
  
