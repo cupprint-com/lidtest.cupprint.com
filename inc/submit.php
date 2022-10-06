@@ -23,8 +23,8 @@
 					 
  }
  
- 
- //print_r($_POST);
+ echo'<br><br>';
+ print_r($_POST);
  
  if(isset($_POST['submit'])){	
  
