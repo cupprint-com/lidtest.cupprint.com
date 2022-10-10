@@ -248,7 +248,7 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result8").selectedIndex = 0;			
 		}else{
-			results[7] = $(this).val();
+			
 			endTime8 = new Date($.now());
 			$("#et8").val(formatDate(endTime8));
 
@@ -272,7 +272,7 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result9").selectedIndex = 0;			
 		}else{
-			results[8] = $(this).val();
+			
 			endTime9 = new Date($.now());
 			$("#et9").val(formatDate(endTime9));
 
