@@ -84,9 +84,9 @@ $(document).ready(function() {
 			$("#tt1").val(totTime1);
 			if ($(this).val() == "fail") {
 				console.log(totTime1);
-				if(totTime1 < 10){
+				if(totTime1 < 10000){
 					console.log('less than 10');
-					}
+				}
 				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
