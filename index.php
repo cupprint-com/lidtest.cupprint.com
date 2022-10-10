@@ -62,7 +62,7 @@
 					<img src="fail.jpg" alt="fail" id="fail">
 			   </div>			   
             </div>
-            <div class="col-sm">
+            <div class="col-sm text-center">
             	<img src="logo.jpg" alt="logo" id="logo">
             	<div ><h4 id="clock"></h4></div>
             </div>
