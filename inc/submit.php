@@ -1,8 +1,8 @@
  <?php 
  
  // function to insert test row of data
- function insertTestResult($test,$conn,$jobNum,$sku,$batchResult,$line){
-				 	 $query = "INSERT INTO cpLidTestResults (jobNumber,sku, startTime,result,endTime,testTime,batchResult,line)  VALUES(:jobNum,:sku,:startTime,:result,:endTime,:totalTime,:batchResult,:line) ";
+ function insertTestResult($test,$conn,$jobNum,$sku,$batchResult,$line,$tester){
+				 	 $query = "INSERT INTO cpLidTestResults (jobNumber,sku, startTime,result,endTime,testTime,batchResult,line,tester)  VALUES(:jobNum,:sku,:startTime,:result,:endTime,:totalTime,:batchResult,:line,:tester) ";
                      $parameters = [
 					  ":jobNum" => $jobNum,
 					  ":sku" => $sku,
@@ -11,7 +11,8 @@
 					  ":endTime" => $test[2],
 					  ":totalTime" => $test[3],
 					  ":batchResult" => $batchResult,
-					  ":line" => $line,					  
+					  ":line" => $line,	
+                      ":tester" => $tester,		
                      ];                  
                                   
                      //get insert error messages
@@ -32,6 +33,7 @@
 	 $sku = $_POST['sku'];
 	 $batchResult = $_POST['batchResult'];	 
 	 $line = $_POST['line'];
+	 $tester = $_POST['tester'];
 	 // get results and assign to indexed array
 	 $arr1=array_values($_POST['test1']);	  
 	 $arr2=array_values($_POST['test2']);	
@@ -45,16 +47,16 @@
 	 $arr10=array_values($_POST['test10']);
 	 
 	 // insert results into database
-	 insertTestResult($arr1, $conn,$jobNumber,$sku,$batchResult,$line);	 
-	 insertTestResult($arr2, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr3, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr4, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr5, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr6, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr7, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr8, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr9, $conn,$jobNumber,$sku,$batchResult,$line);
-	 insertTestResult($arr10, $conn,$jobNumber,$sku,$batchResult,$line);
+	 insertTestResult($arr1, $conn,$jobNumber,$sku,$batchResult,$line,$tester);	 
+	 insertTestResult($arr2, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr3, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr4, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr5, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr6, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr7, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr8, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr9, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
+	 insertTestResult($arr10, $conn,$jobNumber,$sku,$batchResult,$line,$tester);
 	
                         
  }					 
