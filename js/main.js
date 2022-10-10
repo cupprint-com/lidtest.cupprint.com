@@ -75,21 +75,25 @@ $(document).ready(function() {
 			document.getElementById("result1").selectedIndex = 0;
 		//else store in results array set the end time, calculate total time and style select
 		}else{		
-			results[0] = $(this).val();
+			
 			endTime1 = new Date($.now());
 			$("#et1").val(formatDate(endTime1));
 			
 			totTime1 = endTime1 - startTime1;
 			totTime1 = msToTime(totTime1);
 			$("#tt1").val(totTime1);
+			
+			
+			//if test is under 10 seconds and fails the test is a fail record as fail for batch result test
 			if ($(this).val() == "fail") {
-				console.log(endTime1 - startTime1);
 				if((endTime1 - startTime1) < 10000){
 					console.log('less than 10');
+					results[0] = $(this).val();
 				}
 				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[0] = $(this).val();
 			}
 		}
 		
