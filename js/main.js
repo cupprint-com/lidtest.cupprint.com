@@ -19,6 +19,12 @@ $(document).ready(function() {
 	
 	//start clock
 	startTime();
+	
+	
+	//readonly
+	 $(".readonly").keydown(function(e){
+	        e.preventDefault();
+	    });
 
 	//hide fail image on load
     $('#failDiv').hide();
