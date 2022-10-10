@@ -64,7 +64,7 @@
             </div>
             <div class="col-sm">
             	<img src="logo.jpg" alt="logo" id="logo">
-            	<div ><h1 id="clock"></h1></div>
+            	<div ><h4 id="clock"></h4></div>
             </div>
          </div>
          <br>
