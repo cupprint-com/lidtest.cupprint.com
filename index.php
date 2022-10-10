@@ -84,7 +84,7 @@
                   <tr>
                      <th scope="row">1</th>
                      <td><button type="button" class="btn btn-success" id="btn1">Start</button></td>
-                     <td><input id="st1" type="text"  class="form-control" name="test1[startTime1]"   required /></td>
+                     <td><input id="st1" type="text"  class="form-control" name="test1[startTime1]"    readonly required /></td>
                      <td>
                         <select id="result1" name="test1[result1]">
                            <option value="">Result</option>
