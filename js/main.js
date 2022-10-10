@@ -21,7 +21,7 @@ $(document).ready(function() {
 	startTime();
 	
 	
-	//readonly
+	//readonly workaround, cant set input to readonly and required
 	 $(".readonly").keydown(function(e){
 	        e.preventDefault();
 	    });
