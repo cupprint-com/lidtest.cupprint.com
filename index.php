@@ -39,6 +39,7 @@
 				
                <label for="jobNo">Enter Job No.</label><input type="text"  class="form-control" name="jobNo" required >
                <label for="sku">Enter SKU</label><input type="text" class="form-control" name="sku" required ><br>
+			   <label for="tester">Testers Name</label><input type="text" class="form-control" name="tester" required ><br>
 			   
 			   <select  id="lineSelect" class="form-select" name="line" required >
                         <option value="">Choose The Machine Line</option>
