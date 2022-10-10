@@ -103,7 +103,7 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result2").selectedIndex = 0;			
 		}else{
-			results[1] = $(this).val();
+			
 			endTime2 = new Date($.now());
 			$("#et2").val(formatDate(endTime2));
 
@@ -111,9 +111,14 @@ $(document).ready(function() {
 			totTime2 = msToTime(totTime2);
 			$("#tt2").val(totTime2);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime2 - startTime2) < 10000){
+					console.log('less than 10');
+					results[1] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[1] = $(this).val();
 			}
 		}
     });
@@ -122,7 +127,7 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result3").selectedIndex = 0;			
 		}else{
-			results[2] = $(this).val();
+			
 			endTime3 = new Date($.now());
 			$("#et3").val(formatDate(endTime3));
 
@@ -130,9 +135,14 @@ $(document).ready(function() {
 			totTime3 = msToTime(totTime3);
 			$("#tt3").val(totTime3);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime3 - startTime3) < 10000){
+					console.log('less than 10');
+					results[2] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[2] = $(this).val();
 			}
 		}
     });
@@ -141,7 +151,7 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result4").selectedIndex = 0;			
 		}else{
-			results[3] = $(this).val();
+			
 			endTime4 = new Date($.now());
 			$("#et4").val(formatDate(endTime4));
 
@@ -149,9 +159,14 @@ $(document).ready(function() {
 			totTime4 = msToTime(totTime4);
 			$("#tt4").val(totTime4);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime4 - startTime4) < 10000){
+					console.log('less than 10');
+					results[3] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[3] = $(this).val();
 			}
 		}
     });
@@ -160,7 +175,7 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result5").selectedIndex = 0;			
 		}else{
-			results[4] = $(this).val();
+			
 			endTime5 = new Date($.now());
 			$("#et5").val(formatDate(endTime5));
 
@@ -168,9 +183,14 @@ $(document).ready(function() {
 			totTime5 = msToTime(totTime5);
 			$("#tt5").val(totTime5);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime5 - startTime5) < 10000){
+					console.log('less than 10');
+					results[4] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[4] = $(this).val();
 			}
 		}
     });
@@ -179,17 +199,23 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result6").selectedIndex = 0;			
 		}else{
-			results[5] = $(this).val();
+			
 			endTime6 = new Date($.now());
 			$("#et6").val(formatDate(endTime6));
 
 			totTime6 = endTime6 - startTime6;
 			totTime6 = msToTime(totTime6);
 			$("#tt6").val(totTime6);
+			
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime6 - startTime6) < 10000){
+					console.log('less than 10');
+					results[5] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[5] = $(this).val();
 			}
 		}
     });
@@ -198,7 +224,7 @@ $(document).ready(function() {
 			console.log('FIELD EMPTY');
 			document.getElementById("result7").selectedIndex = 0;			
 		}else{
-			results[6] = $(this).val();
+			
 			endTime7 = new Date($.now());
 			$("#et7").val(formatDate(endTime7));
 
@@ -206,10 +232,14 @@ $(document).ready(function() {
 			totTime7 = msToTime(totTime7);
 			$("#tt7").val(totTime7);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");
-				
+				if((endTime7 - startTime7) < 10000){
+					console.log('less than 10');
+					results[6] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[6] = $(this).val();
 			}
 		}
     });
@@ -226,9 +256,14 @@ $(document).ready(function() {
 			totTime8 = msToTime(totTime8);
 			$("#tt8").val(totTime8);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime8 - startTime8) < 10000){
+					console.log('less than 10');
+					results[7] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[7] = $(this).val();
 			}
 		}
     });
@@ -245,9 +280,14 @@ $(document).ready(function() {
 			totTime9 = msToTime(totTime9);
 			$("#tt9").val(totTime9);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime9 - startTime9) < 10000){
+					console.log('less than 10');
+					results[8] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[8] = $(this).val();
 			}
 		}
     });
@@ -256,7 +296,7 @@ $(document).ready(function() {
 			//handle pressing end test by mistake
 			document.getElementById("result10").selectedIndex = 0;			
 		}else{
-			results[9] = $(this).val();
+			
 			endTime10 = new Date($.now());
 			$("#et10").val(formatDate(endTime10));
 
@@ -264,9 +304,14 @@ $(document).ready(function() {
 			totTime10 = msToTime(totTime10);
 			$("#tt10").val(totTime10);
 			if ($(this).val() == "fail") {
-				$(this).css("background-color", "#E41B17");				
+				if((endTime10 - startTime10) < 10000){
+					console.log('less than 10');
+					results[9] = $(this).val();
+				}
+				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
+				results[9] = $(this).val();
 			}
 		}
     });
