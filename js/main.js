@@ -83,6 +83,7 @@ $(document).ready(function() {
 			totTime1 = msToTime(totTime1);
 			$("#tt1").val(totTime1);
 			if ($(this).val() == "fail") {
+				console.log(totTime1);
 				$(this).css("background-color", "#E41B17");           
 			} else {
 				$(this).css("background-color", "white");
