@@ -227,7 +227,7 @@
          <div class="row">
             <div class="col-sm"></div>
             <div class="col-sm text-center">
-               <br>
+               
 			    <input type="hidden" id="batchResult" name="batchResult" value="Pass">
                <input class="btn btn-lg btn-success" type="submit" id="submit" name="submit" value="Submit">
             </div>
