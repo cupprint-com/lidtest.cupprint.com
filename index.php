@@ -13,7 +13,7 @@
 <!doctype html>
 <html lang="en">
    <head>
-      <!-- required readonly meta tags -->
+      <!-- autocomplete="off" required readonly meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
@@ -38,10 +38,10 @@
             <div class="col-sm">
 				
                <label for="jobNo">Enter Job No.</label><input type="text"  class="form-control" name="jobNo" required autocomplete="off" >
-               <label for="sku">Enter SKU</label><input type="text" class="form-control" name="sku" required placeholder="Eg. 12 oz L8 dw pe bunzl lids" >
+               <label for="sku">Enter SKU</label><input type="text" class="form-control" name="sku"  required placeholder="Eg. 12 oz L8 dw pe bunzl lids" >
 			   <label for="tester">Testers Name</label><input type="text" class="form-control" name="tester" required ><br>
 			   
-			   <select  id="lineSelect" class="form-select" name="line" required >
+			   <select  id="lineSelect" class="form-select" name="line" autocomplete="off" required >
                         <option value="">Choose The Machine Line</option>
                         <option value="1">Line 1</option>
                         <option value="2">Line 2</option>
@@ -84,7 +84,7 @@
                   <tr>
                      <th scope="row">1</th>
                      <td><button type="button" class="btn btn-success" id="btn1">Start</button></td>
-                     <td><input id="st1" type="text"  class="form-control readonly" name="test1[startTime1]" autocomplete="off"   required /></td>
+                     <td><input id="st1" type="text"  class="form-control readonly" name="test1[startTime1]"  autocomplete="off" required /></td>
                      <td>
                         <select id="result1" name="test1[result1]">
                            <option value="">Result</option>
@@ -92,13 +92,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td ><input id="et1" type="text"  class="form-control readonly" name="test1[endTime1]"  autocomplete="off" required  /></td>
+                     <td ><input id="et1" type="text"  class="form-control readonly" name="test1[endTime1]" " autocomplete="off" required  /></td>
                      <td ><input id="tt1" type="text"  class="form-control readonly" name="test1[totalTime1]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">2</th>
                      <td><button type="button" class="btn btn-success" id="btn2">Start</button></td>
-                     <td> <input id="st2" type="text"  class="form-control readonly" name="test2[startTime2]" required  /></td>
+                     <td> <input id="st2" type="text"  class="form-control readonly" name="test2[startTime2]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result2" name="test2[result2]">
                            <option value="">Result</option>
@@ -106,13 +106,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td><input id="et2" type="text"  class="form-control readonly" name="test2[endTime2]" required  /></td>
-                     <td ><input id="tt2" type="text"  class="form-control readonly" name="test2[totalTime2]" required  /></td>
+                     <td><input id="et2" type="text"  class="form-control readonly" name="test2[endTime2]" autocomplete="off" required  /></td>
+                     <td ><input id="tt2" type="text"  class="form-control readonly" name="test2[totalTime2]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">3</th>
                      <td><button type="button" class="btn btn-success" id="btn3">Start</button></td>
-                     <td><input id="st3" type="text"  class="form-control readonly" name="test3[startTime3]" required  /></td>
+                     <td><input id="st3" type="text"  class="form-control readonly" name="test3[startTime3]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result3" name="test3[result3]">
                            <option value="">Result</option>
@@ -120,13 +120,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td><input id="et3" type="text"  class="form-control readonly" name="test3[endTime3]" required  /></td>
-                     <td><input id="tt3" type="text"  class="form-control readonly" name="test3[totalTime3]" required  /></td>
+                     <td><input id="et3" type="text"  class="form-control readonly" name="test3[endTime3]" autocomplete="off" required  /></td>
+                     <td><input id="tt3" type="text"  class="form-control readonly" name="test3[totalTime3]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">4</th>
                      <td><button type="button" class="btn btn-success" id="btn4">Start</button></td>
-                     <td><input id="st4" type="text"  class="form-control readonly" name="test4[startTime4]" required  /></td>
+                     <td><input id="st4" type="text"  class="form-control readonly" name="test4[startTime4]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result4" name="test4[result4]">
                            <option value="">Result</option>
@@ -134,13 +134,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td ><input id="et4" type="text"  class="form-control readonly" name="test4[endTime4]" required  /></td>
-                     <td ><input id="tt4" type="text"  class="form-control readonly" name="test4[totalTime4]" required  /></td>
+                     <td ><input id="et4" type="text"  class="form-control readonly" name="test4[endTime4]" autocomplete="off" required  /></td>
+                     <td ><input id="tt4" type="text"  class="form-control readonly" name="test4[totalTime4]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">5</th>
                      <td><button type="button" class="btn btn-success" id="btn5">Start</button></td>
-                     <td ><input id="st5" type="text"  class="form-control readonly" name="test5[startTime5]" required  /></td>
+                     <td ><input id="st5" type="text"  class="form-control readonly" name="test5[startTime5]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result5" name="test5[result5]">
                            <option value="">Result</option>
@@ -148,13 +148,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td ><input id="et5" type="text"  class="form-control readonly" name="test5[endTime5]" required  /></td>
-                     <td ><input id="tt5" type="text"  class="form-control readonly" name="test5[totalTime5]" required  /></td>
+                     <td ><input id="et5" type="text"  class="form-control readonly" name="test5[endTime5]" autocomplete="off" required  /></td>
+                     <td ><input id="tt5" type="text"  class="form-control readonly" name="test5[totalTime5]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">6</th>
                      <td><button type="button" class="btn btn-success" id="btn6">Start</button></td>
-                     <td><input id="st6" type="text"  class="form-control readonly" name="test6[startTime6]" required  /></td>
+                     <td><input id="st6" type="text"  class="form-control readonly" name="test6[startTime6]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result6" name="test6[result6]">
                            <option value="">Result</option>
@@ -162,13 +162,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td><input id="et6" type="text"  class="form-control readonly" name="test6[endTime6]" required  /></td>
-                     <td><input id="tt6" type="text"  class="form-control readonly" name="test6[totalTime6]" required  /></td>
+                     <td><input id="et6" type="text"  class="form-control readonly" name="test6[endTime6]" autocomplete="off" required  /></td>
+                     <td><input id="tt6" type="text"  class="form-control readonly" name="test6[totalTime6]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">7</th>
                      <td><button type="button" class="btn btn-success" id="btn7">Start</button></td>
-                     <td><input id="st7" type="text"  class="form-control readonly" name="test7[startTime7]" required  /></td>
+                     <td><input id="st7" type="text"  class="form-control readonly" name="test7[startTime7]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result7" name="test7[result7]">
                            <option value="">Result</option>
@@ -176,13 +176,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td><input id="et7" type="text"  class="form-control readonly" name="test7[endTime7]" required  /></td>
-                     <td><input id="tt7" type="text"  class="form-control readonly" name="test7[totalTime7]" required  /></td>
+                     <td><input id="et7" type="text"  class="form-control readonly" name="test7[endTime7]" autocomplete="off" required  /></td>
+                     <td><input id="tt7" type="text"  class="form-control readonly" name="test7[totalTime7]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">8</th>
                      <td><button type="button" class="btn btn-success" id="btn8">Start</button></td>
-                     <td><input id="st8" type="text"  class="form-control readonly" name="test8[startTime8]" required  /></td>
+                     <td><input id="st8" type="text"  class="form-control readonly" name="test8[startTime8]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result8" name="test8[result8]">
                            <option value="">Result</option>
@@ -190,13 +190,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td><input id="et8" type="text"  class="form-control readonly" name="test8[endTime8]" required  /></td>
-                     <td><input id="tt8" type="text"  class="form-control readonly" name="test8[totalTime8]" required  /></td>
+                     <td><input id="et8" type="text"  class="form-control readonly" name="test8[endTime8]" autocomplete="off" required  /></td>
+                     <td><input id="tt8" type="text"  class="form-control readonly" name="test8[totalTime8]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">9</th>
                      <td><button type="button" class="btn btn-success" id="btn9">Start</button></td>
-                     <td><input id="st9" type="text"  class="form-control readonly" name="test9[startTime9]" required  /></td>
+                     <td><input id="st9" type="text"  class="form-control readonly" name="test9[startTime9]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result9" name="test9[result9]">
                            <option value="">Result</option>
@@ -204,13 +204,13 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td><input id="et9" type="text"  class="form-control readonly" name="test9[endTime9]" required  /></td>
-                     <td><input id="tt9" type="text"  class="form-control readonly" name="test9[totalTime9]" required  /></td>
+                     <td><input id="et9" type="text"  class="form-control readonly" name="test9[endTime9]" autocomplete="off" required  /></td>
+                     <td><input id="tt9" type="text"  class="form-control readonly" name="test9[totalTime9]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">10</th>
                      <td><button type="button" class="btn btn-success" id="btn10">Start</button></td>
-                     <td ><input id="st10" type="text"  class="form-control readonly" name="test10[startTime10]" required  /></td>
+                     <td ><input id="st10" type="text"  class="form-control readonly" name="test10[startTime10]" autocomplete="off" required  /></td>
                      <td>
                         <select id="result10" name="test10[result10]">
                            <option value="">Result</option>
@@ -218,8 +218,8 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td><input id="et10" type="text"  class="form-control readonly" name="test10[endTime10]" required  /></td>
-                     <td><input id="tt10" type="text"  class="form-control readonly" name="test10[totalTime10]" required  /></td>
+                     <td><input id="et10" type="text"  class="form-control readonly" name="test10[endTime10]" autocomplete="off" required  /></td>
+                     <td><input id="tt10" type="text"  class="form-control readonly" name="test10[totalTime10]" autocomplete="off" required  /></td>
                   </tr>
                </tbody>
             </table>
