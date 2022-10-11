@@ -37,7 +37,7 @@
          <div class="row">
             <div class="col-sm">
 				
-               <label for="jobNo">Enter Job No.</label><input type="text"  class="form-control" name="jobNo" required >
+               <label for="jobNo">Enter Job No.</label><input type="text"  class="form-control" name="jobNo" required autocomplete="off" >
                <label for="sku">Enter SKU</label><input type="text" class="form-control" name="sku" required placeholder="Eg. 12 oz L8 dw pe bunzl lids" >
 			   <label for="tester">Testers Name</label><input type="text" class="form-control" name="tester" required ><br>
 			   
@@ -84,7 +84,7 @@
                   <tr>
                      <th scope="row">1</th>
                      <td><button type="button" class="btn btn-success" id="btn1">Start</button></td>
-                     <td><input id="st1" type="text"  class="form-control readonly" name="test1[startTime1]"    required /></td>
+                     <td><input id="st1" type="text"  class="form-control readonly" name="test1[startTime1]" autocomplete="off"   required /></td>
                      <td>
                         <select id="result1" name="test1[result1]">
                            <option value="">Result</option>
@@ -92,8 +92,8 @@
                            <option value="fail">Fail</option>
                         </select>
                      </td>
-                     <td ><input id="et1" type="text"  class="form-control readonly" name="test1[endTime1]" required  /></td>
-                     <td ><input id="tt1" type="text"  class="form-control readonly" name="test1[totalTime1]" required  /></td>
+                     <td ><input id="et1" type="text"  class="form-control readonly" name="test1[endTime1]"  autocomplete="off" required  /></td>
+                     <td ><input id="tt1" type="text"  class="form-control readonly" name="test1[totalTime1]" autocomplete="off" required  /></td>
                   </tr>
                   <tr>
                      <th scope="row">2</th>
